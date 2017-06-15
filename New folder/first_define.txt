@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+#define DIGIT(y) {if(y>=48&&y<=57)\
+		 {printf("\nGet them all");\
+		 printf("\n%c",y);}};
+
+
+void main()
+{char ch;  clrscr();
+printf("\nEnter character constant");
+scanf("%d",&ch);
+
+
+DIGIT(ch)
+
+/*if(DIGIT(ch))
+printf("Hello World");
+else
+printf("dnsncn");   */
+getch();}
