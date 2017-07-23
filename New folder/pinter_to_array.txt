@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{int s[4][2]={{1,2},{5,6},{9,10}};
+int (*p)[2];
+int i,j;
+p=s;
+for(i=0;i<4;i++)
+{for(j=0;j<2;j++)
+{printf("%d ",*(*(p+i)+j));
+}
+printf("\n");}
+getch();}
