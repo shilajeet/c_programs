@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void show(int (*p)[4],int,int);
+void main()
+{int arr1[3][4]={{100,101,102,103},
+		 {104,105,106,107},
+		 {108,109,110,111}  };
+clrscr();
+
+show(arr1,3,4);
+getch();}
+void show(int (*p)[4],int row,int col)
+{int i,j;
+for(i=0;i<row;i++)
+{for(j=0;j<col;j++)
+{printf("%d ",*(*(p+i)+j));}
+printf("\n");}}
